@@ -14,3 +14,7 @@ Please note that using this script to manage your v2 users in New Relic will dis
 - Save the token as an environment variable or in any safe way. You will be referencing the token as `$TOKEN` in the script
 
 - Run the script as `python3 main.py`
+
+## Graphical User Interface
+Sample of what GUI could look like:  
+![GUI Screenshot](screenshots/scim_gui.png)
