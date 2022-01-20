@@ -15,7 +15,7 @@ headers = {
 os.system('clear')
 
 def clearScreen():
-    input("Press ENTER to continue..")
+    input("Press ENTER to continue...")
     os.system('clear')
 
 def getUsers():
@@ -40,6 +40,7 @@ def getUsers():
     pretty = tabulate(list, headers=hds)
     print(pretty)
     print()
+
 def getGroups():
     response = requests.get(url=url.format(grp), headers=headers)
     jsonData = response.json()
@@ -101,6 +102,7 @@ def usersGroups(userId,groupId):
     print(jsonData)
     jsonFile.close()
     print()
+
 def deleteUser(userId):
     response = requests.delete(url=url.format(usr+'/'+userId), headers=headers)
     print(response)

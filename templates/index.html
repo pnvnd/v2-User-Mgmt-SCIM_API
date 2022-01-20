@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <h1>New Relic V2 SCIM API</h1>
+    <form method="post" action="{{ url_for('getUsers') }}" id="calculator_form">
+        <label for="token">Token: </label>
+        <input type="text" name="token" id="token">
+        <br/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+        <input type="submit" value="Get Users"/>
+    </form>
+    <p>Users: {{user}}</p>
+
+
+</body>
+</html>
